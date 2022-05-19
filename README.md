@@ -415,3 +415,11 @@ curl -X POST 'http://192.168.31.132:8080/query?q=create+database+%22jmeter%22&db
 ![image](https://github.com/Mountains-and-rivers/influxdb1.8-ha/blob/main/images/2.png)
 
 ![image](https://github.com/Mountains-and-rivers/influxdb1.8-ha/blob/main/images/1.png)
+
+### 参考
+
+https://www.modb.pro/db/191155
+
+https://github.com/chengshiwen/influx-proxy/wiki
+
+https://blog.csdn.net/wsdc0521/article/details/106064914
