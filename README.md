@@ -130,7 +130,50 @@ nginx 编译
 --with-openssl=/usr/local/openssl-1.1.1c
 ```
 
-配置
+influxdb 配置
+
+```
+reporting-disabled = true         # 禁用报告，默认为 false
+
+[meta]
+
+dir = "/root/influxdb/meta"    # 元信息目录
+
+[data]
+
+dir = "/root/influxdb/data"    # 数据目录
+
+wal-dir = "/root/influxdb/wal" # 预写目录
+
+wal-fsync-delay = "10ms"          # SSD 设置为 0s，非 SSD 推荐设置为 0ms-100ms
+
+index-version = "tsi1"            # tsi1 磁盘索引，inmem 内存索引需要大量内存
+
+query-log-enabled = true          # 查询的日志，默认是 true
+
+cache-max-memory-size = "1g"      # 分片缓存写入的最大内存大小，默认是 1g
+
+[coordinator]
+
+write-timeout = "20s"             # 写入请求超时时间，默认为 10s
+
+[http]
+
+# bind-address = ":8086"            # 绑定地址，需要绑定 ip:port 时使用
+
+auth-enabled = false              # 认证开关，默认是 false
+
+log-enabled = true                # http 请求日志，默认是 true
+
+access-log-path = "/var/log/influxdb"
+
+[logging]
+
+level = "info"                    # 日志等级，error、warn、info(默认)、debug
+
+```
+
+nginx配置
 
 ```
 
