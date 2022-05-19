@@ -412,4 +412,6 @@ curl -X POST 'http://192.168.31.132:8080/query?q=create+database+%22jmeter%22&db
 
 使用1.1.0 web ui 连接
 
+![image](https://github.com/Mountains-and-rivers/influxdb1.8-ha/blob/main/images/2.png)
+
 ![image](https://github.com/Mountains-and-rivers/influxdb1.8-ha/blob/main/images/1.png)
