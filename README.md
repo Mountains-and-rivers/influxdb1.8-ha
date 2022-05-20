@@ -10,7 +10,7 @@ RUN curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Cen
     yum clean all && yum makecache  && \
     mkdir -p /var/log/proxy  && \
     yum install -y golang  && \
-COPY /influx-proxy-2.5.8-linux-arm64/ influx-proxy
+COPY influx-proxy-2.5.8-linux-amd64/ influx-proxy
 WORKDIR influx-proxy
 EXPOSE 7076
 CMD ["/influx-proxy/influx-proxy"]
